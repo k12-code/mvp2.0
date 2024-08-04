@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFS - Your Fashion Stylist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>GFS</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#wardrobe">Virtual Wardrobe</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Welcome to Your Virtual Styling Experience</h2>
+    <p>Explore curated fashion looks, customize your avatar, and shop your style!</p>
+    <button onclick="tryOn()">Try On Now</button>
+  </section>
+  <section id="wardrobe">
+    <h2>Virtual Wardrobe</h2>
+    <div class="avatar-container">
+      <img src="avatar.png" alt="Your Avatar" id="avatar">
+      <div class="clothes-options">
+        <img src="outfit1.png" alt="Outfit 1" onclick="changeOutfit('outfit1.png')">
+        <img src="outfit2.png" alt="Outfit 2" onclick="changeOutfit('outfit2.png')">
+        <!-- Add more outfits as needed -->
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Learn more about our mission to provide a unique and personalized fashion experience.</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 GFS. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
